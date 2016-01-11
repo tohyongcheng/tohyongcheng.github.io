@@ -15,6 +15,7 @@ A few things that I want to share in the blog for the next few months:
 - work on a side project that deals with scalability
 
 And also, I hope to be:
+
 - more active in my relationships with family and friends
 - exercise and keep in shape
 - cut down on distractions and focus on learning
