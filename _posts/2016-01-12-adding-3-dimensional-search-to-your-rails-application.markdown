@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Adding 3-dimensional search to your Rails application"
+title:  "Adding 3-dimensional search to your Rails application with PostgreSQL"
 date:   2016-01-12 11:00:00
 categories: "ruby on rails"
 ---
@@ -14,7 +14,7 @@ end
 {% endhighlight %}
 
 What's wrong with this approach is that you are using the application to process all the colors of each object instead of the database. Using Ruby to do this takes an excruciating long amount of time to process. 
-You should delegate this job to the database with all its indices set.
+You should delegate this job to the database since they are meant to deal with numerical operations better than your application. You don't want to add another layer which will only incur more computational cost.
 
 What I did was simply to activate an extension for PostgreSQL. First, generate a migration file.
 
