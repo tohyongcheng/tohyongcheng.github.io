@@ -90,7 +90,7 @@ Benchmark.ips do |x|
    x.report("using cube") { Material.filter_by_color params }
    x.compare!
 end
-{ % endhighlight %}
+{% endhighlight %}
 
 ```
 Calculating -------------------------------------
