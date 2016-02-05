@@ -10,5 +10,6 @@ twitter_username: sebastiantoh
 github_username:  tohyongcheng
 
 # Build settings
-redcarpet:
+kramdown:
   extensions: [autolink]
+  input: GFM
