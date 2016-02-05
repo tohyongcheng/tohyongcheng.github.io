@@ -10,6 +10,5 @@ twitter_username: sebastiantoh
 github_username:  tohyongcheng
 
 # Build settings
-markdown: redcarpet
 redcarpet:
   extensions: [autolink]
