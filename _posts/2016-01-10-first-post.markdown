@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title:  "First Post & New Year resolutions"
 date:   2016-01-10 11:20:07
 categories: intro hello-world

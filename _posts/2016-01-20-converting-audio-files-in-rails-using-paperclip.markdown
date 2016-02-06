@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title:  "Converting audio files in Rails using Paperclip"
 date:   2016-01-20 11:00:00
 categories: "ruby on rails"

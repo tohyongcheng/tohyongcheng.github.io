@@ -1,6 +1,5 @@
 ---
 layout: default
-comments: true
 ---
 <div class="post">
 
@@ -14,9 +13,9 @@ comments: true
 	</article>
 
 	<div class="post-comments">
-		{% if post.comments %}
+		{% if page.comments %}
 			{% include comments.html %}
-  	    {% endif %}
-  	</div>
+    {% endif %}
+	</div>
 </div>
 

@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title:  "Deploying on Ruby on Rails using Passenger, PostgreSQL and Capistrano for CentOS 7 on DigitalOcean"
 date:   2016-01-10 12:52:07
 categories: [learn, ruby on rails, digitalocean, capistrano, postgresql]

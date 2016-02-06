@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title:  "Adding 3-dimensional search to your Rails application with PostgreSQL"
 date:   2016-01-12 11:00:00
 categories: "ruby on rails"
