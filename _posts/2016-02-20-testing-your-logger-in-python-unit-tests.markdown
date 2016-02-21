@@ -45,13 +45,15 @@ class MyUnitTestCase(TestCase):
 
 With this, we are able to test whether `warn` is called, and if it was called with the right argument. You might ask, where did `assert_called_with` come from? It actually comes from the mock object that we created from `@mock.patch(logging)`. We have patched `logging` with a Mock object that comes with the following assertion methods:
 
-```
+{% highlight python %}
+
 assert_called_with(*args, **kwargs) # assert that calls are made in a particular way
 assert_called_once_with(*args, **kwargs) # asserts that method is called once with specified arguments
 assert_any_call(*args, **kwargs) # assert the mock has been called with the specified arguments.
 assert_has_calls(calls, any_order=False) # assert the mock has been called with the specified calls.
 assert_not_called(*args, **kwargs) # assert the mock was never called.
-```
+
+{% endhighlight %}
 
 There are even more methods that you can test out with, and they are all in the docs [here](https://docs.python.org/2/library/logging.html). You can now test your logger with any of these methods to ensure that your logic is right!
 
