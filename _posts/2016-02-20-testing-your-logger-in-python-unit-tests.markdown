@@ -2,8 +2,8 @@
 layout: post
 comments: true
 title:  "Testing your logger in Python unit tests"
-date:   2016-02-21 18:00:00
-categories: python
+date:   2016-02-20 11:00:00
+categories: "python"
 ---
 
 When in developing in large scale applications, we definitely need to do proper logging in order to know where all our errors are happening at.
@@ -16,15 +16,15 @@ Let's say we have a simple function in python to get a value from a dictionary:
 import logging
 
 def get_value_from_dict(dict, key):
-	try:
-		return dict[key]
-	except KeyError:
-		logging.warn("The dictionary does not have a key value of %s" % key)
-	return None
+    try:
+        return dict[key]
+    except KeyError:
+        logging.warn("The dictionary does not have a key value of %s" % key)
+    return None
 
 {% endhighlight %}
 
-Now, in order to test if the function executes ```logging.warn```, we can just run the following testcase:
+Now, in order to test if the function executes `logging.warn`, we can just run the following testcase:
 
 {% highlight python %}
 
@@ -36,15 +36,14 @@ class MyUnitTestCase(TestCase):
     
     @mock.patch(logging)
     def test_get_value_from_dict_has_logging(self, mock_logger):
-    	d = {}
-    	key = 1
-    	get_value_from_dict(d, key)
-    	self.assert_true(mock_logger.warn.called)
-    	mock_logger.warn.assert_called_with("The dictionary does not have a key value of %s" % key)
+        d = {}
+        key = 1
+        get_value_from_dict(d, key)
+        mock_logger.warn.assert_called_with("The dictionary does not have a key value of %s" % key)
 
 {% endhighlight %}
 
-With this, we are able to test whether ```warn``` is called, and if it was called with the right argument. You might ask, where did `assert_called_with` come from? It actually comes from the mock object that we created from ```@mock.patch(logging)```. We have patched ```logging``` with a Mock object that comes with the following assertion methods:
+With this, we are able to test whether `warn` is called, and if it was called with the right argument. You might ask, where did `assert_called_with` come from? It actually comes from the mock object that we created from `@mock.patch(logging)`. We have patched `logging` with a Mock object that comes with the following assertion methods:
 
 ```
 assert_called_with(*args, **kwargs) # assert that calls are made in a particular way
