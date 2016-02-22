@@ -6,9 +6,9 @@ date:   2016-02-20 11:00:00
 categories: "python"
 ---
 
-When in developing in large scale applications, we definitely need to do proper logging in order to know where all our errors are happening at.
+When developing large scale applications, it is necessary to do proper logging to know where all the errors and exceptions are happening at.
 
-In a Django project, I was trying to find ways to test whether my logger had been called to execute a logging action. In my case, you may want to test whether a log message is created when an exception is raised. This is going to be easy, and what you will need to use is just Python's Mock class to mock the logger in the method.
+In a Django project, I was trying to find ways to test whether my logger had been called to execute a logging action. In my case, you may want to test whether a log message is created when an exception is raised. This is going to be easy, and what you need to use is Python's Mock class to mock the a logger instance.
 
 Let's say we have a simple function in python to get a value from a dictionary:
 
