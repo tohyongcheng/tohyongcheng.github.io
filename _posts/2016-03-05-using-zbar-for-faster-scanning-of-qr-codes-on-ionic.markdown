@@ -28,7 +28,7 @@ I have found ZBar to detect QR Codes faster with decent accuracy and suitable fo
 To use it when building Ionic applications is very simple. First download a plugin that `tjwoon` has created for using the ZBar SDK with Cordova at your Ionic application directory:
 
 ```
-$ ionic plugins add org.cloudsky.cordovaplugins.zbar
+$ ionic plugin add org.cloudsky.cordovaplugins.zbar
 ```
 
 This helps to install the plugin into `/plugins` and you can find more information of the plugin [here](https://github.com/tjwoon/csZBar).
