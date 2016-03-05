@@ -36,22 +36,22 @@ This helps to install the plugin into `/plugins` and you can find more informati
 To make it more Angular-ish, let us create a service that uses this plugin. Create a service module with the following code:
 
 {% highlight javascript %}
-  angular.module('myApp').factory("$zBarService", [
-    '$q', function($q) {
-      return {
-        scan: function(params) {
-          var q;
-          q = $q.defer();
-          cloudSky.zBar.scan(params, function(result) {
-            return q.resolve(result);
-          }, function(error) {
-            return q.reject(error);
-          });
-          return q.promise;
-        }
-      };
-    }
-  ]);
+angular.module('myApp').factory("$zBarService", [
+  '$q', function($q) {
+    return {
+      scan: function(params) {
+        var q;
+        q = $q.defer();
+        cloudSky.zBar.scan(params, function(result) {
+          return q.resolve(result);
+        }, function(error) {
+          return q.reject(error);
+        });
+        return q.promise;
+      }
+    };
+  }
+]);
 {% endhighlight %}
 
 We are making use of `$q` here, to help us run function asynchronously and use the return values when the plugin is done processing. Make sure to include the service module in `index.html` before trying to run the `scan` method! 
@@ -59,19 +59,19 @@ We are making use of `$q` here, to help us run function asynchronously and use t
 Finally, to use `$zBarService`, you can use `$zBarService` in your controller, and call it in the following way:
 
 {% highlight javascript %}
-  angular.module('myApp').controller('BarCodeCtrl', function($scope, $zBarService) {
-    return $scope.scanBarCode = function() {
-      return $zBarService.scan({
-        text_title: "Scan Barcode",
-        text_instructions: "Aim at the barcode to scan",
-        camera: "back",
-        flash: "off",
-        drawSight: false
-      }).then(function(barcodeData) {
-        // barcodeData is the result string
-      });
-    };
-  });
+angular.module('myApp').controller('BarCodeCtrl', function($scope, $zBarService) {
+  return $scope.scanBarCode = function() {
+    return $zBarService.scan({
+      text_title: "Scan Barcode",
+      text_instructions: "Aim at the barcode to scan",
+      camera: "back",
+      flash: "off",
+      drawSight: false
+    }).then(function(barcodeData) {
+      // barcodeData is the result string
+    });
+  };
+});
 {% endhighlight %}
 
 Now, you are able to use the ZBar library in your Ionic application! You can test with the `$cordovaBarcodeScanner` for ionic [here](http://ngcordova.com/docs/plugins/barcodeScanner/), and compare the speed in detecting and processing the barcodes/QR codes. After using ZBar, I have never gone back to ZXing. It's definitely worth a try!
