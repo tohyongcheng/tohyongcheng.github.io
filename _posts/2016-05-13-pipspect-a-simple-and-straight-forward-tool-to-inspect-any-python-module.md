@@ -13,20 +13,20 @@ In order to easily circumvent this problem, I made a simple CLI tool to inspect 
 
 ## Install:
 
-```
+{% highlight python %}
 pip install pipspect
-```
+{% endhighlight %}
 
 ## How to use
 
-```
+{% highlight python %}
 $ pipspect <module>
 
 # examples:
 $ pipspect app.py
 $ pipspect sys
 $ pipspect urllib
-```
+{% endhighlight %}
 
 ## What does it output:
 
@@ -34,7 +34,7 @@ I chose to only output the builtin functions, classes and their methods as these
 
 Sample output of sys module:
 
-```
+{% highlight python %}
 Module: sys
   +Builtin Function: displayhook
     displayhook(object) -> None
@@ -225,7 +225,7 @@ Module: sys
     Set the global debug tracing function.  It will be called on each
     function call.  See the debugger chapter in the library manual.
 
-```
+{% endhighlight %}
 
 
 
