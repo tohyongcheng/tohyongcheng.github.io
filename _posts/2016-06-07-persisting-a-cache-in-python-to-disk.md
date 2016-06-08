@@ -13,7 +13,7 @@ In order to counter this, saving your cache to a disk is something that can be v
 
 The function below can be used as a decorator for methods to ensure that the cache is persisted to the disk with a specific filename you can determine to wrap around the original function. 
 
-```python
+{% highlight python %}
 def persist_cache_to_disk(filename):
     def decorator(original_func):
         try:
@@ -31,16 +31,16 @@ def persist_cache_to_disk(filename):
         return new_func
 
     return decorator
-```
+{% endhighlight %}
 
 You can then use the decorator as such:
 
-```python
+{% highlight python %}
 @persist_cache_to_disk('users.p')
 def get_all_users():
 	# your method here
 	pass
-```
+{% endhighlight %}
 
 
-A gist for the code is located here: https://gist.github.com/tohyongcheng/94ca536b0a5c96c9751b82150f20c95a
+A gist for the code is located [here](https://gist.github.com/tohyongcheng/94ca536b0a5c96c9751b82150f20c95a).
