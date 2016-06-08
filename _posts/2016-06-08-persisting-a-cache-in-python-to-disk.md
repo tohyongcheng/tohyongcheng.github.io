@@ -2,9 +2,10 @@
 layout: post
 title: Persisting a Cache in Python to Disk using a decorator
 comments: true
-date: 2016-06-08 15:00:00
+date: 2016-06-07 15:00:00
 categories: "python"
 ---
+
 
 Caches are important in helping to solve time complexity issues, and ensure that we don't run a time-consuming program twice. You never know when your scripts can just stop abruptly, and then you lose all the information in your cache, and you have you run everything all over again. 
 
