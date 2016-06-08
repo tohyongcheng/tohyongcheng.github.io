@@ -23,7 +23,7 @@ Open Source Projects:
 - [mangapark-dl - CLI tool to download manga and convert to PDF for easy viewing](https://github.com/tohyongcheng/mangapark-dl)
 - [mangasearch - API to search for manga](https://github.com/tohyongcheng/mangapark-dl)
 
-Projecst:
+Projects:
 
 - [Paper3D - fold 3D triangular mesh to non-overlapping on 2D](https://github.com/swayam18/Paper3D)
 - [Realtime Simulation of Air Convection currents](https://www.youtube.com/watch?v=5RdkqQL0vPY)
