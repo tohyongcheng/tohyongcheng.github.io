@@ -2,7 +2,7 @@
 layout: post
 title: Persisting a Cache in Python to Disk using a decorator
 comments: true
-date:   2016-06-08 15:00:00
+date: 2016-06-08 15:00:00
 categories: "python"
 ---
 
