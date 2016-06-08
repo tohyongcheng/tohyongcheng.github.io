@@ -14,6 +14,9 @@ In order to counter this, saving your cache to a disk is something that can be v
 The function below can be used as a decorator for methods to ensure that the cache is persisted to the disk with a specific filename you can determine to wrap around the original function. 
 
 {% highlight python %}
+import pickle
+# or import cPickle as pickle
+
 def persist_cache_to_disk(filename):
     def decorator(original_func):
         try:
