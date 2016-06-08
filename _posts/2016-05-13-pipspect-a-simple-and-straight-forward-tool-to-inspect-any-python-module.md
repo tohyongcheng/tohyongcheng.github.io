@@ -2,7 +2,7 @@
 layout: post
 title: Pipspect - a simple and straight forward tool to inspect any Python module
 comments: true
-date:   2016-03-05 11:00:00
+date:   2016-05-13 11:00:00
 categories: "python"
 ---
 
