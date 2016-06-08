@@ -16,6 +16,7 @@ Some of the work/projects that I have been very involved in:
 - [GameDay - organize football games together](http://www.gamedayapp.co)
 
 Open Source Projects:
+
 - [Pipspect - simple CLI tool to inspect Python modules](https://github.com/tohyongcheng/pipspect)
 - [jsonp2json - converts jsonp to json](https://github.com/tohyongcheng/jsonp2json)
 - [pystasis - self hosted static analysis of Python code (WIP)](https://github.com/tohyongcheng/pystasis)
@@ -23,6 +24,7 @@ Open Source Projects:
 - [mangasearch - API to search for manga](https://github.com/tohyongcheng/mangapark-dl)
 
 Projecst:
+
 - [Paper3D - fold 3D triangular mesh to non-overlapping on 2D](https://github.com/swayam18/Paper3D)
 - [Realtime Simulation of Air Convection currents](https://www.youtube.com/watch?v=5RdkqQL0vPY)
 
