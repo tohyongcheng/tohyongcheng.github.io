@@ -2,7 +2,7 @@
 layout: post
 title: "Superset - the open source Tableau"
 comments: true
-date:   2017-02-03 11:00:00
+date:   2017-02-03 00:00:00
 categories: ["data", "data-engineering", "data-visualization"]
 ---
 
