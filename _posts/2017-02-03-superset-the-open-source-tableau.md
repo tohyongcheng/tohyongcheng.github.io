@@ -43,7 +43,7 @@ I'll just get into the different pros and cons that I currently can think of it 
 **View/Edit a Slice**
 ![superset-explore-slice](https://cloud.githubusercontent.com/assets/130878/20372732/410392f4-ac22-11e6-9c6d-3ef512e81212.gif)
 
-See more at https://github.com/airbnb/superset#screenshots--gifs
+See more at [https://github.com/airbnb/superset#screenshots--gifs]
 
 #### Here's a video of how it works:
 
@@ -66,7 +66,7 @@ See more at https://github.com/airbnb/superset#screenshots--gifs
 ### Cons
 - Very little support for now. Since it is an open solution, you can't expect more... But I'm sure the community will try to help
 - Still little support for scalable architecture, but it could just be as easy as deploying a cluster of Superset Docker containers.
-- No support for NoSQL databases as of yet, but I think it'll come soon: https://github.com/airbnb/superset/issues/600
+- No support for NoSQL databases as of yet, but I think it'll come soon: [https://github.com/airbnb/superset/issues/600]
 - Not as fully featured as Tableau.
 - Visualisations are still quite basic, but are good enough as a V1 prototype.
 
@@ -74,7 +74,7 @@ Obviously, the pros outweigh the cons if you ask me.
 
 ## What I did:
 
-What I just was to follow the tutorial listed on the documentation page at http://airbnb.io/superset/installation.html where it comes with pre-installed examples to let you know how data can be visualised with its current set of visualisations. 
+What I just was to follow the tutorial listed on the documentation page at [http://airbnb.io/superset/installation.html] where it comes with pre-installed examples to let you know how data can be visualised with its current set of visualisations. 
 
 To be honest, I was quite impressed with what it can do. I just connected a Redshift cluster with some of the data that we already use for analytics and voila! I spent 30 minutes setting up the database, and also creating 3 'splices' and graphs of what I usually query for my work. Everything was saved on a dashboard, and I could immediately show to my colleagues. 
 
@@ -82,7 +82,7 @@ With Superset, your data evolves into a playground instantly. And it comes for f
 
 ## How to setup:
 
-In order to setup, follow the instructions here: http://airbnb.io/superset/installation.html
+In order to setup, follow the instructions here: [http://airbnb.io/superset/installation.html]
 
 An overview of what you need to do is:
 
@@ -108,5 +108,5 @@ It's that easy!
 If you get to see this, try it. It is quite amazing with that AirBNB has open-sourced such a useful solution for anyone to do quick visualisations with the data they have in hand. This will be useful for startups who don't want to spend much on a commercial solution, but still want to get some flexibility and quick prototyping capabilities with data visualisations. I think you can even bring it to a business meeting/presentation and show some immediate hands on skills to impress the viewers.
 
 ## References:
-1. https://medium.com/airbnb-engineering/caravel-airbnb-s-data-exploration-platform-15a72aa610e5#.9ag81n6bt
-2. http://airbnb.io/superset/
+1. [https://medium.com/airbnb-engineering/caravel-airbnb-s-data-exploration-platform-15a72aa610e5#.9ag81n6bt]
+2. [http://airbnb.io/superset/]
