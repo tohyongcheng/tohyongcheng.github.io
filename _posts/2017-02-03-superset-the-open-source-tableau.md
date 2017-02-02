@@ -66,6 +66,7 @@ See more at [https://github.com/airbnb/superset#screenshots--gifs]
 
 
 ### Cons
+
 - Very little support for now. Since it is an open solution, you can't expect more... But I'm sure the community will try to help
 - Still little support for scalable architecture, but it could just be as easy as deploying a cluster of Superset Docker containers.
 - No support for NoSQL databases as of yet, but I think it'll come soon: <https://github.com/airbnb/superset/issues/600>
@@ -98,6 +99,7 @@ An overview of what you need to do is:
 At this point of time, you can start exploring the pre-loaded examples and see what visualisations it is capable of.
 
 If you have a database of some data, you can immediately connect it to Superset by:
+
 7. Connecting to database through SQLAlchemy
 8. Setup tables that you think are relevant
 9. Setup what you want to do with each column of the table, e.g whether it is filterable, groupable, to count as distinct etc
